@@ -1,0 +1,62 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: black; /* Background color for the page */
+}
+
+
+.grid-container {
+display: grid;
+grid-template-areas:
+"top-left top-center top-right"
+"middle-left center middle-right"
+"bottom-left bottom-center bottom-right";
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 2fr 1fr;
+height: 100vh; /* Full viewport height /
+gap: 10px; / Space between items */
+}
+
+
+.grid-item {
+background-color: #333; /* Background color for grid items /
+color: white; / Text color for contrast /
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+border: 1px solid #444; / Optional: border for better visibility */
+}
+
+
+.top-left { grid-area: top-left; }
+.top-center { grid-area: top-center; }
+.top-right { grid-area: top-right; }
+.middle-left { grid-area: middle-left; }
+.center { grid-area: center; }
+.middle-right { grid-area: middle-right; }
+.bottom-left { grid-area: bottom-left; }
+.bottom-center { grid-area: bottom-center; }
+.bottom-right { grid-area: bottom-right; }
+
+}
+
+.walking-spider { position: fixed; top: 0; left: -150px; 
+                 /* Start off-screen to the left */ 
+  z-index: 9999; /* Ensure it stays on top of all other content */
+  width: 100px; /* Adjust the size of your spider */
+animation: crawl 12s linear infinite, walk 0.5s ease-in-out infinite alternate;
+    
+    } 
+/* Controls the spider moving across the screen */
+@keyframes crawl { 0% { left: -150px; transform: translateY(0); } 100% { left: 100vw; 
+            /* Move completely across the screen */ 
+transform: translateY(0); } }
+/* Controls the up/down walking motion (legs/body) */
+@keyframes walk { 0% { transform: translateY(0) rotate(0deg); } 100% { transform: translateY(-10px) rotate(5deg); 
+                                                                      /* Slight bob and */
+                                      } }
+
+
+
+
