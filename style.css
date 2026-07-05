@@ -21,13 +21,13 @@ body {
 
 /* Grid item styling */
 .grid-item {
-  background-color: #333; /* Background color for grid items */
+  background-color: #black; /* Background color for grid items */
   color: white; /* Text color for contrast */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border: 1px solid #444; /* Optional: border for better visibility */
+  border: 1px solid #ddd; /* Optional: border for better visibility */
 
   /* Force the iframe to occupy the full width and height of its grid cell */
 .grid-item iframe {
