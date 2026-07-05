@@ -32,7 +32,7 @@ body {
   /* Force the iframe to occupy the full width and height of its grid cell */
 .grid-item iframe {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     border: none; /* Optional: removes default border */
     display: block; /* Prevents tiny gaps at the bottom of the frame */
 
