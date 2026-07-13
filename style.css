@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 10px;
-    max-width: 600px; /* Keeps the grid from getting too wide on big screens */
+    max-width: 100%; /* Keeps the grid from getting too wide on big screens */
     margin: 0 auto; /* Centers the grid on the screen */
   }
 
